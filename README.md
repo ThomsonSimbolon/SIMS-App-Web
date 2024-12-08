@@ -29,7 +29,8 @@
 1. Terhubung ke Internet.
 2. Run Terminal "npx tailwindcss -i ./public/css/tailwind-input.css -o ./public/css/tailwind-output.css --watch" untuk menjalankan library css (Tailwind CSS).
 3. Untuk database dapat di import melalui yang sudah tertera di file database atau dapat menjalankan perintah "php spark migrate" untuk database sudah terhubung ke migration
-4. "php spark serve".
+4. "composer install"
+5. "php spark serve"
 
 => Tools yang digunakan pada saat testing JWT untuk mendapatkan token:
 
