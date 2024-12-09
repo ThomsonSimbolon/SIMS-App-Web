@@ -112,14 +112,27 @@ class AuthController extends BaseController
             // Simpan data ke database
             $userModel->save($data);
 
-            return $this->respond(['status' => true, 'message' => 'Registrasi berhasil']);
-        } else {
-            $response = [
-                'status' => false,
-                'errors' => $this->validator->getErrors()
-            ];
+            // Set notifikasi registrasi berhasil ke session
+            session()->setFlashdata('success', 'Registrasi berhasil!');
 
-            return $this->respond($response, 422); // Status code: Bad Request
+            // Redirect ke halaman registrasi
+            return redirect()->to('/register');
+
+            // return $this->respond(['status' => true, 'message' => 'Registrasi berhasil']);
+        } else {
+            // Set notifikasi error ke session
+            session()->setFlashdata('errors', $this->validator->getErrors());
+
+            // Redirect ke halaman registrasi
+            return redirect()->to('/register')->withInput();
+
+            // Cek respone JWT
+            // $response = [
+            //     'status' => false,
+            //     'errors' => $this->validator->getErrors()
+            // ];
+
+            // return $this->respond($response, 422); 
         }
     }
 

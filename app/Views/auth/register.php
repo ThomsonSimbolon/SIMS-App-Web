@@ -39,7 +39,7 @@
                 <!-- <?php $validation = \Config\Services::validation(); ?> -->
 
                 <!-- Form Register -->
-                <form action="<?= base_url('auth/register/store'); ?>" method="post" class="w-full max-w-sm mx-auto">
+                <form action="<?= base_url('register/store'); ?>" method="post" class="w-full max-w-sm mx-auto">
                     <?= csrf_field(); ?>
                     <div class="mb-5">
                         <div class="relative flex items-center">
