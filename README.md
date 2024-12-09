@@ -41,6 +41,10 @@
 5. Postman untuk testing dan mengambil Token
 6. Apache
 
+<!-- Xample Json Web Token .env -->
+
+JWT_SECRET=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzaW1zLWFwcC13ZWIiLCJzdWIiOiI2IiwiaWF0IjoxNzMzNTQ1Mjc5LCJleHAiOjE3MzM1NDg4NzksImVtYWlsIjoic2ltYm9sb250aG9tc29uMTBAZ21haWwuY29tIn0.7FTfQ7oqSZ6XtuHUl0rlNwdfTsodYPh1SppWTXzoy7A
+
 <!-- Email dan Password Test dari Database yang tersedia -->
 
 Email : simbolonthomson10@gmail.com
